@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<script>
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Получить Библию бесплатно почтой в Украине</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body onload="init();">
+<div id="header" class="container-fluid row1">
+	<div class="container">
+    	<div class="row">
+    	 	<div class="col-xs-6" style="padding-top:15px;">
+        		<img class="logo-img" src="img/logo.png" alt="Логотип Библия светящаяся со крестом"  />
+        	</div>
+        	<div class="col-xs-6" style="padding-top:10px;">
+        		<div class="box f-right help-me t-right">
+               <span class="chat-link"><a href="#">Быстрый заказ Библии</a></span><a href="#"><img style="height: 43px; width: 47px; vertical-align:middle; margin-left:10px;" src="img/icohelp.png" alt="help" /></a>
+                </div>
+                <span class="chat-span">*Абсолютно бесплатно<br>**Отправка в течении 2 дней</span>
+        	</div>
+    	</div>
+		<div class="row">
+    	 	<div class="col-md-7 col-sm-7 col-xs-8" style="padding-top:50px;">  		
+<p class="big-text">
+<span style="color:#ffffff;">Библия почтой в Украине</span>
+</p>
+<p class="small-text">
+Абсолютно бесплатно. <br>
+Отправка в течении 2 дней.
+</p><br><br><br><br><br><br><br><br>
+
+        	</div>
+        	<div class="col-md-5 col-sm-5 col-xs-4">
+        		<canvas id="canvas" width="820" height="686"></canvas>
+        	</div>
+    	</div>
+        <div class="row">
+        	<div class="col-md-7 col-xs-12">
+            <div class="form-top">
+Закажи БИБЛИЮ Сегодня! - <br>Измени свою жизнь уже завтра!
+			</div>
+            </div>
+        </div>
+	</div>
+</div>
+<div id="signup" class="container-fluid row2">
+	<div class="container">
+		<div class="row">
+    	 	<div class="col-md-6 col-sm-6 form-holder">
+        		<form id="demoform" method="post" action="submitform.php">
+                	<div class="form-items-holder">
+                		<input class="input_name" type="text" name="name" placeholder="Имя и Фамилия получателя">
+                        <input type="text" name="username" placeholder="Населенный пункт">
+                        <input type="text" name="username" placeholder="№ отделения новой почты">
+                    	<input type="text" name="username" placeholder="Номер телефона">
+                    	<input type="submit" value="Получить Библию бесплатно!">
+                    </div>
+                </form>
+        	</div>
+        	<div class="col-md-6 col-sm-6"  style="padding-top:50px;">
+<img class="photo_bible--1" src="img/bible.png" alt="">
+<img class="photo_bible--1" src="img/bible3.jpg" alt="">
+<p class="text_bible-1">
+Эта Библия, может быть вашей личной Книгой! Если у вас есть желание начать (или продолжить) читать Библию, а у вас нет возможности приобрести её, мы с удовольствием отправим вам её почтой (Новой почтой, Укрпочтой или другой компанией по вашему запросу). В любую точку Украины мы доставим Библию совершенно бесплатно и в кратчайшие сроки! Вам не нужно будет платить и за доставку, упаковку - мы всё берем на себя! Также если вы хотите близким и родным заказать Библию, также мы с радостью отправим её почтой!
+</p>
+        	</div>
+    	</div>
+	</div>
+</div>
+<!--  
+<div id="features" class="container-fluid row3 features">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 row-title1">
+            	<div>
+               		<span class="text">Features</span><span class="dot">.</span>
+                </div>
+            </div>
+        </div>
+		<div class="row">
+    	 	<div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icoflag.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Awarded Hosting</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+        	<div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icocostum.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Customizable</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+           <div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icolaptop.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Responsive</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+        	<div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icomoney.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Affordable</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+    	</div>
+        <div class="row">
+    	 	<div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icosales.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Marketing tools</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+        	<div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icosupport.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">24/7 Support</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+           <div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icocloud.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Daily Backup</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+        	<div class="col-sm-3 col-xs-6 feature">
+        		<img src="img/icopagebuilder.png" style="height: 127px; width: 125px;" alt=""><br>
+                <div class="f-title">Page builder</div>
+                <div class="f-details">This is a paragraph. Click here to add / edit your own text.</div>
+        	</div>
+    	</div>
+	</div>
+</div> -->
+<div id="trynow" class="container-fluid row4">
+	<div class="container">
+		<div class="row">
+    	 	<div class="col-md-6 col-sm-6 col-xs-12 trynow">
+        		<h3>Почему заказать Библию, правильный шаг?</h3><br>
+                <ul>
+                	<li>Библия - поменяет вашу жизнь, и наполнит вашу жизнь счастьем, и радостью!</li>
+                    <li>Получив бесплатную Библию, вы каждый день сможете общаться с Живым Богом!</li>
+                    <li>Заказав Божье Слово для своих родных, они обретут мир, который даёт только Господь Иисус Христос!</li>
+                    <li>Бог оставил Библию для того, чтобы её читали. Поэтому вы на правильном пути!</li>
+                </ul>
+        	</div>
+        	<div class="col-md-6 col-sm-6 col-xs-12 laptop">
+        	</div>
+            
+    	</div>
+	</div>
+</div>
+<div id="prices" class="container-fluid row5">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 row-title2">
+            	<div>
+               		<span class="text">Это некоторые стихи из Библии:</span>
+                </div>
+            </div>
+        </div>
+		<div class="row">
+    	 	<div class="col-md-3 col-sm-6 price-column">
+        		<div class="price-table">
+                    <div class="price-title green">Иоанна 6:47</div>
+                    <div class="sp"></div>
+                    <p class="bible_text">Иисус Христос говорит: Истинно, истинно говорю вам: верующий в Меня имеет жизнь вечную.
+                    <div class="sp"></div>
+                </div>
+                <a href="#" class="price-btn"><div class="green">Задать вопрос <img class = "img-quest" src="img/quest.png" alt=""></div></a>
+        	</div>
+        	<div class="col-md-3 col-sm-6 price-column">
+        		<div class="price-table">
+                	<div class="price-title pink">Иоанна 3:16</div>
+                	<div class="sp"></div>
+                	<p class="bible_text">Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, дабы всякий, верующий в Него, не погиб, но имел жизнь вечную.
+                	<div class="sp"></div>
+                </div>
+               <a href="#" class="price-btn"><div class="pink">Задать вопрос <img class = "img-quest" src="img/quest.png" alt=""></div></a>
+                <div class="circle">Золотой стих!</div>
+        	</div>
+            <div class="col-md-3 col-sm-6 price-column">
+        		<div class="price-table">
+                    <div class="price-title blue">Матфея 22:37</div>
+                    <div class="sp"></div>
+                    <p class="bible_text">Возлюби Господа Бога твоего всем сердцем твоим, и всею душею твоею, и всем разумением твоим.
+                    <div class="sp"></div>
+                </div>
+                <a href="#" class="price-btn"><div class="blue">Задать вопрос <img class = "img-quest" src="img/quest.png" alt=""></div></a>
+        	</div>
+        	<div class="col-md-3 col-sm-6 price-column">
+        		<div class="price-table">
+                    <div class="price-title purple">Матфея 7:12</div>
+                    <div class="sp"></div>
+                    <p class="bible_text">Итак во всём, как хотите, чтобы с вами поступали люди, так поступайте и вы с ними.
+                    <div class="sp"></div>
+                </div>
+                <a href="#" class="price-btn"><div class="purple">Задать вопрос <img class = "img-quest" src="img/quest.png" alt=""></div></a>
+        	</div>
+    	</div>
+	</div>
+</div>
+
+<!-- 
+
+<div id="testimonials" class="container-fluid row6">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 row-title2">
+            	<div>
+               		<span class="text">Testimonials</span><span class="dot">.</span>
+                </div>
+            </div>
+        </div>
+		<div class="row">
+    	 	<div class="col-md-12">
+        		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  					<ol class="carousel-indicators">
+    					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    					<li data-target="#myCarousel" data-slide-to="1"></li>
+    					<li data-target="#myCarousel" data-slide-to="2"></li>
+    					<li data-target="#myCarousel" data-slide-to="3"></li>
+  					</ol>
+
+
+  					<div class="carousel-inner" role="listbox">
+    					<div class="item active">
+                        	<div class="testimonial">
+      							<img src="img/alex.png" style="height: 105px; width: 105px;" alt="">
+                            	<div class="testimonial-title">Alex Paul</div>
+                            	<div class="testimonial-subtitle">from Apple.</div>
+                            	<div class="testimonial-details">This is a paragraph. Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</div>
+                            </div>
+    					</div>
+
+    					<div class="item">
+      						<div class="testimonial">
+      							<img src="img/alex.png" style="height: 105px; width: 105px;" alt="">
+                            	<div class="testimonial-title">Alex Paul</div>
+                            	<div class="testimonial-subtitle">from Apple.</div>
+                            	<div class="testimonial-details">This is a paragraph. Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</div>
+                            </div>
+    					</div>
+
+    					<div class="item">
+      						<div class="testimonial">
+      							<img src="img/alex.png" style="height: 105px; width: 105px;" alt="">
+                            	<div class="testimonial-title">Alex Paul</div>
+                            	<div class="testimonial-subtitle">from Apple.</div>
+                            	<div class="testimonial-details">This is a paragraph. Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</div>
+                            </div>
+    					</div>
+
+    					<div class="item">
+      						<div class="testimonial">
+      							<img src="img/alex.png" style="height: 105px; width: 105px;" alt="">
+                            	<div class="testimonial-title">Alex Paul</div>
+                            	<div class="testimonial-subtitle">from Apple.</div>
+                            	<div class="testimonial-details">This is a paragraph. Click here to add / edit your own text. This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</div>
+                            </div>
+    					</div>
+  					</div>
+
+
+  					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    					<span class="sr-only">Previous</span>
+                        <img  class="glyphicon glyphicon-chevron-left"  src="img/arrowleft.png" style="height: 53px; width: 30px;" alt="">
+  					</a>
+  					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    					<span class="sr-only">Next</span>
+                        <img class="glyphicon glyphicon-chevron-right" src="img/arrowright.png" style="height: 53px; width: 30px;" alt="">
+  					</a>
+				</div>
+        	</div>
+    	</div>
+	</div>
+</div>
+<div id="clients" class="container-fluid row7">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 row-title2">
+            	<div>
+               		<span class="text">Clients</span><span class="dot">.</span>
+                </div>
+            </div>
+        </div>
+		<div class="row">
+    	 	<div class="col-md-12 clients">
+        		<div class="client-logo"><img src="img/1.png" alt=""></div>
+                <div class="client-logo"><img src="img/2.png" alt=""></div>
+                <div class="client-logo"><img src="img/3.png" alt=""></div>
+                <div class="client-logo"><img src="img/4.png" alt=""></div>
+                <div class="client-logo"><img src="img/5.png" alt=""></div>
+        	</div>
+    	</div>
+	</div>
+</div> -->
+<div id="footer" class="container-fluid row8">
+	<div class="container">
+		<div class="row">
+    	 	<div class="col-md-6 col-sm-6 col-xs-12 footer-left">
+        		2021 © <strong>Библия почтой бесплатно</strong>.
+        	</div>
+        	<div class="col-md-6 col-sm-6 col-xs-12 footer-right">
+        		+38 (050) 075 17 42, Звонки принимаем 24/7
+        	</div>
+    	</div>
+	</div>
+</div>
+
+<div class="pink mobile-order">Получить Библию бесплатно!</div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/easeljs-0.6.0.min.js"></script>
+<script src="js/tweenjs-0.4.0.min.js"></script>
+<script src="js/movieclip-0.6.0.min.js"></script>
+<script src="js/preloadjs-0.3.0.min.js"></script>
+<script src="js/rocketanimation.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script>
+"use strict";
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"img/cloud.png", id:"cloud"},
+		{src:"img/rocket.png", id:"rocket_1"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib.rocket();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(30);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+</body>
+</html>
